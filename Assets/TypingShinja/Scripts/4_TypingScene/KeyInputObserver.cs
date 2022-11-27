@@ -26,7 +26,7 @@ public class KeyInputObserver : MonoBehaviour
         {
             foreach (KeyCode keyCode in Enum.GetValues(typeof(KeyCode)))
             {
-                if (Input.GetKey(keyCode))
+                if (Input.GetKeyDown(keyCode))
                 {
                     keyCodeJustEnterd = keyCode;
                     break;
